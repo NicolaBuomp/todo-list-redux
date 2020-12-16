@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
         todos: filterMyTodos(state.todos, state.activeFilter)
     }
 }
-const myConnect = connect(mapStateToProps, { toggleTodo, removeTodo });
+const myConnect = connect(mapStateToProps, { toggleTodo });
 const myTodoList = myConnect(TodoList);
 
 export default myTodoList;
